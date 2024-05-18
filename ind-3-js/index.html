@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Транзакции</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Список Транзакций</h1>
+    <table id="transactionTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Дата и время</th>
+                <th>Категория транзакции</th>
+                <th>Краткое описание транзакции</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody id="transactionBody">
+        </tbody>
+    </table>
+    <center><h2>Общая сумма:</h2></center>
+    <center><h2 id="totalAmount">0</h2></center>
+    <center>
+        <div id="transactionDetails">
+            <h2>Подробное описание транзакции</h2>
+            <p id="transactionDescription"></p>
+        </div>
+    </center>
+    <input type="text" id="amount" placeholder="Сумма">
+    <input type="text" id="category" placeholder="Категория">
+    <input type="text" id="description" placeholder="Описание">
+    <button onclick="addTransaction()">Добавить транзакцию</button>
+    <script src="script.js"></script>
+</body>
+</html>
